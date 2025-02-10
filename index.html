@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidance Data System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="blur-overlay"></div>
+        <div class="welcome-content">
+            <h1>Guidance Data System</h1>
+            <p>Your trusted platform for student counseling and records management.</p>
+            <!-- Button Container -->
+            
+            <div class="bastacontainer">
+                <h2>Student Information Table</h2>
+        
+                <!-- Input Form -->
+                <form id="studentForm">
+                    <input type="number" id="studentID" placeholder="Student ID" required>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="number" id="grade" placeholder="Grade" required>
+                    <input type="text" id="section" placeholder="Section" required>
+                    <input type="number" id="contact" placeholder="Contact Number" required>
+                    <input type="text" id="guardian" placeholder="Parent/Guardian" required>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <select id="status">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <button type="submit">Add Student</button>
+                </form>
+                
+                <!-- Student Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Grade</th>
+                            <th>Section</th>
+                            <th>Contact Number</th>
+                            <th>Parent/Guardian</th>
+                            <th>Address</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody">
+                        <!-- Dynamic Data Will Appear Here -->
+                    </tbody>
+                </table>
+
+                
+            </div>
+
+            
+            
+            
+
+        </div>
+        
+    </section>
+
+    <!-- Other Sections -->
+    <section class="info-section">
+        <h2>About the System</h2>
+        <p>This system helps students schedule counseling sessions, manage appointments, and keep track of their progress.</p>
+        
+    </section>
+
+    <section class="features-section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Secure Student Records</li>
+            <li>Appointment Scheduling</li>
+            <li>Teacher Referrals</li>
+            <li>Guidance Reports</li>
+        </ul>
+    </section>
+<script src="js.js"></script>
+</body>
+</html>

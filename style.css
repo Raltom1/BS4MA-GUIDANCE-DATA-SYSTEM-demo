@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Welcome Section */
+.welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: url('https://aics.edu.ph/wp-content/uploads/2018/11/aicsnewbldg.jpg') no-repeat center center/cover;
+}
+
+/* Blurred Background Effect */
+.blur-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Blurs the background */
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better readability */
+}
+/* Button Container */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Custom Button Design */
+.custom-btn {
+    background: rgba(255, 255, 255, 0.2); /* Transparent White */
+    border: 2px solid white;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.custom-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.bastacontainer {
+    background: rgba(10, 10, 10, 0.473);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: left;
+}
+
+form input, select {
+    padding: 11px;
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+#studentTableBody{
+    color: black;
+}
+
+
+
+/* Welcome Text */
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+}
+
+/* Other Sections */
+.info-section, .features-section {
+    padding: 50px;
+    background: #222;
+    text-align: left;
+}
